@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melvin James - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Melvin James</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my projects, skills, and experiences as I journey towards becoming a full-stack developer.</p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="about" class="profile">
+            <h2>About Me</h2>
+            <img src="PHOTO-2024-01-30-10-12-18.jpg" alt="Melvin James - Profile Picture">
+            <p>Hi, I'm Melvin James from Bangalore, India. I'm a tech enthusiast aspiring to be a full-stack developer. Currently pursuing my BCA degree, I'm passionate about leveraging technology to solve problems and constantly exploring new tools and languages to expand my skill set. I thrive on challenges that come with learning and applying new concepts and am eager to continue growing in the field of computer science.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Angular</p>
+                </div>
+                <div class="skill">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Django, Express.js</p>
+                </div>
+                <div class="skill">
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Adobe Photoshop, Figma</p>
+                </div>
+                <div class="skill">
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>My Works</h2>
+            <div class="works">
+                <div class="work-item" data-project="pomodorotimer">
+                    <img src="Pomodorotimer.png" alt="Pomodoro Timer Project" loading="lazy">
+                    <h3>Pomodoro timer Website</h3>
+                    <p>This is a simple website that helps sers to use the popular japaniese pomodoro concept</p>
+                </div>
+                <div class="work-item" data-project="fmv">
+                    <img src="fmv.png" alt="FMV Analysis Project" loading="lazy">
+                    <h3>Favourite Movies Blog</h3>
+                    <p>This is a website built using angular to display my Favourite Movies from anime hollywhood and Bollyhood</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through any of the platforms below:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/melvin-james-303561255/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/melvinjames1" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.instagram.com/melvin._.james/" target="_blank" rel="noopener">Instagram</a>
+                <a href="mailto:melvin.mj576@gmail.com">Email</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Melvin James. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <span class="close-button" aria-label="Close Modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="" />
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank" rel="noopener">View Project</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
